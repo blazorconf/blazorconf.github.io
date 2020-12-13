@@ -1,0 +1,23 @@
+.site-header {
+    border-top: 5px solid #5C2D91;
+    border-bottom: 1px solid #5C2D91;
+    min-height: 55.95px;
+    position: relative;
+}
+
+.container-height {
+    min-height: 78vh;
+}
+
+.page-footer {
+    border-top: 1px solid #5C2D91;
+    margin-bottom: 0;
+}
+
+a {
+    color: #5C2D91;
+}
+
+a:hover {
+    color: #5C2D91;
+}
