@@ -1,3 +1,7 @@
+:root {
+    --primary: #5C2D91;
+    --secondary: #f1e8fa;
+}
 .site-header {
     border-top: 5px solid #5C2D91;
     border-bottom: 1px solid #5C2D91;
@@ -5,6 +9,9 @@
     position: relative;
 }
 
+.jumbotron {
+    background-color: var(--secondary);
+}
 .container-height {
     min-height: 78vh;
 }
@@ -20,4 +27,36 @@ a {
 
 a:hover {
     color: #5C2D91;
+}
+
+.btn {
+    background-color: #5C2D91;
+    border-color: #5C2D91;
+}
+
+.btn:hover {
+    background-color: #5C2D91;
+    border-color: #5C2D91;
+}
+
+.social-icon {
+    color: #5C2D91;
+    font-size: 19px;
+    margin-top: 5px;
+}
+
+.text-color {
+    color: #5C2D91;
+}
+
+.w-260 {
+    width: 260px;
+}
+
+.mw-50 {
+    max-width: 50%;
+}
+
+.mw-75 {
+    max-width: 75%;
 }
