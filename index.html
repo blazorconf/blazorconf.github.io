@@ -1,227 +1,439 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" sizes="57x57" href="./icon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./icon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./icon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./icon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./icon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./icon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./icon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./icon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="./icon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./icon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BlazorConf 2022</title>
+
+	<!-- PLUGINS CSS STYLE -->
+	<!-- Bootstrap -->
+	<link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link href="plugins/font-awsome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Magnific Popup -->
+	<link href="plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+	<!-- Slick Carousel -->
+	<link href="plugins/slick/slick.css" rel="stylesheet">
+	<link href="plugins/slick/slick-theme.css" rel="stylesheet">
+	<!-- CUSTOM CSS -->
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- FAVICON -->
+	<link rel="apple-touch-icon" sizes="57x57" href="images/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icon/favicon-16x16.png">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="./icon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="images/icon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <title>Blazor Conf 2021</title>
-    <title>Blazor Conf 2021 | La prima conferenza italiana dedicata allo sviluppo di applicazioni con Blazor organizzata
-        dalla community Blazor Developer Italiani
-    </title>
-    <meta property="og:title" content="Blazor Conf 2021" />
-    <meta property="og:image" content="https://blazorconf.it/images/logo_white.png" />
-    <meta property="og:locale" content="it" />
-    <meta property="og:type" content="website" />
-    <meta name="description"
-        content="La prima conferenza italiana dedicata allo sviluppo di applicazioni con Blazor organizzata dalla community Blazor Developer Italiani" />
-    <meta property="og:description"
-        content="La prima conferenza italiana dedicata allo sviluppo di applicazioni con Blazor organizzata dalla community Blazor Developer Italiani" />
-    <link rel="canonical" href="/" />
-    <meta property="og:url" content="/" />
-    <meta property="og:site_name" content="Blazor Conf 2021" />
+
+	<meta property="og:title" content="Blazor Conf 2022">
+    <meta property="og:image" content="https://blazorconf.it/images/logo-blazorconf2022.svg">
+    <meta property="og:locale" content="it">
+    <meta property="og:type" content="website">
+    <meta name="description" content="La prima conferenza italiana dedicata allo sviluppo di applicazioni con Blazor organizzata dalla community Blazor Developer Italiani">
+    <meta property="og:description" content="La prima conferenza italiana dedicata allo sviluppo di applicazioni con Blazor organizzata dalla community Blazor Developer Italiani">
+    <link rel="canonical" href="/">
+    <meta property="og:url" content="/">
+    <meta property="og:site_name" content="Blazor Conf 2022">
     <script type="application/ld+json">
         {
-            "headline": "Blazor Conf 2021",
+            "headline": "Blazor Conf 2022",
             "description": "La prima conferenza italiana dedicata allo sviluppo di applicazioni con Blazor organizzata dalla community Blazor Developer Italiani",
             "url": "/",
             "@type": "WebSite",
-            "name": "Blazor Conf 2021",
+            "name": "Blazor Conf 2022",
             "@context": "https://schema.org"
         }
     </script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
-    <link rel="stylesheet" href="./css/site.css" />
+
 </head>
 
-<body>
-    <header class="site-header">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="/">
-                    <img src="./images/blazordevita_logo.png" width="30" height="30" class="d-inline-block align-top"
-                        alt="">
-                    <strong>Blazor Conf</strong> 2021
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="agenda.html">Agenda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="speaker.html">Speaker</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="sponsor.html">Sponsor</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item me-3 me-lg-0">
-                            <a target="_blank" class="nav-link waves-effect waves-light text-primary"
-                                href="https://www.facebook.com/blazordeveloperitaliani">
-                                <i class="fab fa-facebook-f social-icon"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item me-3 me-lg-0">
-                            <a target="_blank" class="nav-link waves-effect waves-light text-primary"
-                                href="https://twitter.com/blazordevita">
-                                <i class="fab fa-twitter social-icon"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item me-3 me-lg-0">
-                            <a target="_blank" class="nav-link waves-effect waves-light text-primary"
-                                href="https://www.linkedin.com/groups/8896269/">
-                                <i class="fab fa-linkedin social-icon mr-3"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="btn btn-primary btn-lg"
-                                href="https://www.eventbrite.com/e/blazor-conf-2021-tickets-132619732189/"
-                                target="_blank" role="button">
-                                <i class="fas fa-ticket-alt"> </i> Registrati
-                                <span class="sr-only">(Registrati)</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <div class="container container-height">
-        <div class="row pt-5">
-            <div class="col-lg-6">
-                <img class="img-fluid pt-2 pl-4 pr-4 pb-4" src="./images/logo.png" alt="Blazor Conf 2021">
-            </div>
-            <div class="col-lg-6">
-                <p class="lead mt-4">La community <strong>Blazor Developer Italiani</strong> organizza la sua prima
-                    <strong>conferenza italiana
-                        sul framework
-                        Blazor</strong>. Un giornata per stare insieme e parlare del framework, con tanti speaker
-                    italiani che usano
-                    Blazor
-                    già in produzione e che fanno parte della community. L'evento sarà <strong>on-line</strong> e
-                    completamente <strong>gratuito</strong>.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <hr>
-            </div>
-        </div>
+<body class="body-wrapper">
 
-        <div class="row pt-2">
-            <div class="col-12 text-center">
-                <h2 class="display-5 mb-5">Saranno con noi</h2>
-            </div>
-            <script type="text/javascript" src="https://sessionize.com/api/v2/sm2mkw71/view/SpeakerWall"></script>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <hr>
-            </div>
-        </div>
-        <div class="row my-4">
-            <div class="col-md-12">
-                <div class="jumbotron">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <h2 class="display-5 mb-5">Un grazie agli sponsor dell'evento</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 text-center">
-                            <a href="https://www.blexin.com" target="_blank">
-                                <img src="images/blexin.svg" class="w-50 mb-5 mb-md-0" alt="blexin">
-                            </a>
 
-                        </div>
-                        <div class="col-md-6 text-center">
-                            <a href="https://www.ellycode.com" target="_blank">
-                                <img src="images/ellycode.svg" class="w-50" alt="ellycode">
-                            </a>
-                        </div>
-                        <div class="col-md-6 text-center mt-5">
-                            <a href="https://www.lobrafutura.com/" target="_blank">
-                                <img src="images/lobra.png" class="w-50" alt="lobra">
-                            </a>
-                        </div>
-                        <div class="col-md-6 text-center mt-5">
-                            <a href="https://www.packtpub.com/" target="_blank">
-                                <img src="images/packt.png" class="w-50" alt="packt">
-                            </a>
-                        </div>
-                        <div class="col-md-6 text-center mt-5">
-                            <a href="https://www.jetbrains.com/" target="_blank">
-                                <img src="images/jetbrains.png" class="w-50" alt="jetbrains">
-                            </a>
-                        </div>
-                        <div class="col-md-6 text-center mt-5">
-                            <a href="https://www.facebook.com/DotNetCode.IT" target="_blank">
-                                <img src="images/dotnetcode_logo.png" class="w-50" alt="dotnetcode">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+	<nav class="navbar main-nav border-less fixed-top navbar-expand-lg p-0">
+		<div class="container-fluid p-0">
+			<!-- logo -->
+			<a class="navbar-brand" href="#">
+				<img width="205" src="images/logo-blazorconf2022.svg" alt="logo blazor conference 2022">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="fa fa-bars"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item dropdown active dropdown-slide">
+						<a class="nav-link" href="index.html">Home
+							<span>/</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#speaker">Speaker
+							<span>/</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#schedule">Agenda<span>/</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#sponsor">Sponsor<span>/</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#location">Location</a>
+					</li>
+				</ul>
+				<a href="https://www.eventbrite.it/e/blazor-conf-2022-tickets-317570741637" target="_blank" class="ticket">
+					<img src="images/icon/ticket.png" alt="ticket">
+					<span>Registrati</span>
+				</a>
+			</div>
+		</div>
+	</nav>
 
-    </div>
+	<section id="home" class="banner bg-banner-two">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<!-- Content Block -->
+					<div class="block">
+						<!-- Coundown Timer -->
+						<img class="img img-fluid" src="images/logo-blazorconf2022.svg" alt="logo blazor conf 2022">
+						<h3 class="pt-3 text-color-white">27 Maggio 2022 - Roma e on-line</h3>
+						<!-- Action Button -->
+						<!--<a href="#" class="btn btn-main-md mt-3">Registrati</a>-->
+						<div class="timer"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <footer class="page-footer font-small purple">
-        <div class="footer-copyright text-center py-3">
-            &copy; 2020 Copyright: <a href="https://blazordev.it"> Blazor Developer Italiani</a>
-        </div>
-    </footer>
+	<section id="about" class="section about">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6 align-self-center">
+					<div class="image-block bg-about">
+						<img class="img-fluid" src="images/logo-blazordevita.png" alt="">
+					</div>
+				</div>
+				<div class="col-lg-8 col-md-6 align-self-center">
+					<div class="content-block">
+						<h2>La conferenza italiana su <span class="alternate">Blazor</span></h2>
+						<div class="description-one">
+							<p>
+								La seconda edizione della conferenza italiana dedicata al framework Blazor organizzata dalla community Blazor Developer Italiani
+							</p>
+						</div>
+						<div class="description-two">
+							<p>
+								Un giornata per stare insieme e parlare del framework, con tanti speaker italiani che usano Blazor già in produzione e che fanno parte della community. L'evento sarà sia in presenza che on-line e la partecipazione è completamente gratuita.
+							</p>
+						</div>
+						<ul class="list-inline">
+							<li class="list-inline-item">
+								<a href="https://www.eventbrite.it/e/blazor-conf-2022-tickets-317570741637" target="_blank" class="btn btn-main-md">Registrati</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="https://blazordev.it" target="_blank" class="btn btn-transparent-md">Scopri la nostra community</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F29MV45VMZ"></script>
-    <script src="scripts/counter.js">
+	<section id="speaker" class="section speakers bg-speaker overlay-lighter">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<!-- Section Title -->
+					<div class="section-title white">
+						<h3>Chi saranno gli <span class="alternate">Speaker?</span></h3>
+						<p>Amici e membri della community, che condivideranno la loro esperienza sul framework e risponderanno a tutte le vostre domande</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<!-- Speaker 1 -->
+					<div class="speaker-item">
+						<div class="image">
+							<img src="images/speakers/micheleaponte.jpg" alt="Foto Michele Aponte" class="img-fluid">
+							<div class="primary-overlay"></div>
+							<div class="socials">
+								<ul class="list-inline">
+									<li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/apomic80"><i class="fa fa-facebook"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://twitter.com/apomic80"><i class="fa fa-twitter"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/apomic80/"><i class="fa fa-linkedin"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://github.com/apomic80"><i class="fa fa-github"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="content text-center">
+							<h5><a href="single-speaker.html">Michele Aponte</a></h5>
+							<p>CEO @ Blexin / CTO @ Ellycode</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<!-- Speaker 2 -->
+					<div class="speaker-item">
+						<div class="image">
+							<img src="images/speakers/emanuelebartolesi.jpg" alt="Foto Emanuele Bartolesi" class="img-fluid">
+							<div class="primary-overlay"></div>
+							<div class="socials">
+								<ul class="list-inline">
+									<li class="list-inline-item"><a target="_blank" href="https://www.emanuelebartolesi.com/"><i class="fa fa-sitemap"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://twitter.com/kasuken"><i class="fa fa-twitter"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/bartolesiemanuele/"><i class="fa fa-linkedin"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://github.com/kasuken"><i class="fa fa-github"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="content text-center">
+							<h5><a href="single-speaker.html">Emanuele Bartolesi</a></h5>
+							<p>Microsoft 365 Architect</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
 
-    </script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+	<section id="schedule" class="section schedule">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="section-title">
+						<h3><span class="alternate">Agenda</span> Conferenza</h3>
+						<p>L'agenda sarà annunciata a breve, insieme agli speaker che terranno le sessioni</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="schedule-tab">
+						<ul class="nav nav-pills text-center">
+							<li class="nav-item">
+								<a class="nav-link active" href="#nov20" data-toggle="pill">
+									Track unica
+									<span>27 Maggio 2022</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!--<div class="schedule-contents bg-schedule">
+						<div class="tab-content" id="pills-tabContent">
+							<div class="tab-pane fade show active schedule-item" id="nov20">
+								<ul class="m-0 p-0">
+									<li class="headings">
+										<div class="time">Ora</div>
+										<div class="speaker">Speaker</div>
+										<div class="subject">Sessione</div>
+										<div class="venue">Sala</div>
+									</li>
+									<li class="schedule-details">
+										<div class="block">
+											<div class="time">
+												<i class="fa fa-clock-o"></i>
+												<span class="time">9.00</span>
+											</div>
+											<div class="speaker">
+												-
+											</div>
+											<div class="subject">Registrazione</div>
+											<div class="venue">Accettazione</div>
+										</div>
+									</li>
+									<li class="schedule-details">
+										<div class="block">
+											<div class="time">
+												<i class="fa fa-clock-o"></i>
+												<span class="time">9.30</span>
+											</div>
+											<div class="speaker">
+												<img src="images/speakers/speaker-thumb-one.jpg"
+													alt="speaker-thumb-one">
+												<span class="name">Samanta Doe</span>
+											</div>
+											<div class="subject">Keynote</div>
+											<div class="venue">Sala A</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>-->
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'G-F29MV45VMZ');
-    </script>
+				</div>
+			</div>
+		</div>
+	</section>
 
+	<section id="registration" class="cta-ticket bg-ticket overlay-dark">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<!-- Get ticket info -->
+					<div class="content-block">
+						<h2>Registrati<span class="alternate">Subito!</span></h2>
+						<p>L'evento è gratuito sia da remoto che in presenza, devi solo scegliere!</p>
+						<a href="https://www.eventbrite.it/e/blazor-conf-2022-tickets-317570741637" target="_blank" class="btn btn-main-md">Registrati</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="image-block"><img src="images/speakers/speaker-ticket.png" alt="" class="img-fluid"></div>
+	</section>
+
+	<section id="sponsor" class="sponsors section bg-sponsors overlay-white">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="section-title">
+						<h3>I nostri <span class="alternate">Sponsor</span></h3>
+						<p>Questo evento è gratuito grazie al supporto dei nostri sponsor, che coprono le spese e ci supportano in tutta la fase di organizzazione</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="sponsor-title text-center">
+						<h5>Sponsor Platinum</h5>
+					</div>
+					<div class="block text-center">
+						<ul class="list-inline sponsors-list">
+							<li class="list-inline-item">
+								<div class="image-block text-center">
+									<a href="https://blexin.com/" target="_blank">
+										<img src="images/sponsors/blexin.png" alt="Logo Sponsor Blexin"
+											class="img-fluid">
+									</a>
+								</div>
+							</li>
+							<li class="list-inline-item">
+								<div class="image-block text-center">
+									<a href="https://ellycode.com/" target="_blank">
+										<img src="images/sponsors/ellycode.png" alt="Logo Sponsor Ellycode"
+											class="img-fluid">
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- Title -->
+					<div class="sponsor-title text-center">
+						<h5>Sponsor Gold</h5>
+					</div>
+					<div class="block text-center">
+						<!-- Sponsors image list -->
+						<ul class="list-inline sponsors-list">
+							<li class="list-inline-item">
+								<div class="image-block text-center">
+									<a href="https://www.unikey.it/" target="_blank">
+										<img src="images/sponsors/unikey.png" alt="Logo Sponsor Unikey"
+											class="img-fluid">
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="location" class="map">
+		<div id="map"></div>
+		<div class="address-block">
+			<h4>Spaces Eur Arte</h4>
+			<ul class="address-list p-0 m-0">
+				<li><i class="fa fa-home"></i><span>Viale dell'Arte 25, 00144 <br />Roma, Italia.</span></li>
+			</ul>
+			<a target="_blank" href="https://www.google.com/maps/place/Spaces+-+Rome,+Spaces+Eur+Arte/@41.8317223,12.4735195,17z/data=!4m12!1m6!3m5!1s0x13258b80b10029bf:0xa193c262aadd39ea!2sSpaces+-+Rome,+Spaces+Eur+Arte!8m2!3d41.8317183!4d12.4757082!3m4!1s0x13258b80b10029bf:0xa193c262aadd39ea!8m2!3d41.8317183!4d12.4757082" class="btn btn-white-md">Indicazioni stradali</a>
+		</div>
+	</section>
+
+	<footer class="footer-main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="block text-center">
+						<div class="footer-logo">
+							<img width="250" src="images/logo-blazordevita-white.svg" alt="logo" class="img-fluid">
+						</div>
+						<ul class="social-links-footer list-inline">
+							<li class="list-inline-item">
+								<a target="_blank" href="https://www.facebook.com/blazordeveloperitaliani"><i class="fa fa-facebook"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a target="_blank" href="https://twitter.com/blazordevita"><i class="fa fa-twitter"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a target="_blank" href="https://www.linkedin.com/groups/8896269/"><i class="fa fa-linkedin"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a target="_blank" href="https://t.me/+peIr3tJOKNBmNTQ8"><i class="fa fa-telegram"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a target="_blank" href="https://www.youtube.com/c/BlazorDeveloperItaliani"><i class="fa fa-youtube"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a target="_blank" href="https://www.twitch.tv/blazordevita"><i class="fa fa-twitch"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a target="_blank" href="https://github.com/blazordevita"><i class="fa fa-github"></i></a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+	<footer class="subfooter">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 align-self-center">
+					<div class="copyright-text">
+						<p><a href="https://blazordev.it/">Blazor Developer Italiani</a> &#169; 2022 Tutti i diritti sono riservati</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<a href="#" class="to-top"><i class="fa fa-angle-up"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="plugins/jquery/jquery.js"></script>
+	<script src="plugins/popper/popper.min.js"></script>
+	<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script src="plugins/smoothscroll/SmoothScroll.min.js"></script>
+	<script src="plugins/isotope/mixitup.min.js"></script>
+	<script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script src="plugins/slick/slick.min.js"></script>
+	<script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY2AENpUfjNRJB1lbHqzCCgKNcshfkBiQ"></script>
+	<script type="text/javascript" src="plugins/google-map/gmap.js"></script>
+	<script src="js/custom.js"></script>
 </body>
 
 </html>
