@@ -548,7 +548,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .btn-main-md:hover {
   color: #fff;
-  background: #e65c00;
+  background: #b78de8;
 }
 
 .btn-main-md:focus {
@@ -847,7 +847,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .footer-main {
-  background: #272735;
+  background: #b78de8;
   padding: 90px 0;
 }
 
@@ -922,7 +922,7 @@ select.form-control:not([size]):not([multiple]) {
   height: 45px;
   width: 45px;
   text-align: center;
-  background: #59328a;
+  background: #b78de8;
   float: right;
 }
 
@@ -1066,8 +1066,9 @@ select.form-control:not([size]):not([multiple]) {
   font-size: 1rem;
   text-transform: lowercase;
   font-weight: normal;
-  color: #59328a;
+  color: #b78de8;
   font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 
 .banner .block h1 {
@@ -3891,7 +3892,12 @@ ul.pagination .active a {
 /*# sourceMappingURL=maps/style.css.map */
 
 /* custom */
-
+.text-color-primary {
+  color: #59328a;
+}
+.text-color-secondary {
+  color: #b78de8;
+}
 .text-color-white {
   color: white;
 }
