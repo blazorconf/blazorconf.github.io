@@ -107,7 +107,7 @@ function initialize() {
     var pinIcon = new google.maps.MarkerImage(marker_image,null,null, null,new google.maps.Size(40, 60));
 
     marker = new google.maps.Marker({
-        position: rome,
+        position: milan,
         map: map,
         icon: pinIcon,
         title: 'eventre'
