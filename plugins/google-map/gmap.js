@@ -6,7 +6,7 @@ window.marker = null;
 function initialize() {
     var map;
 
-    var rome = new google.maps.LatLng(41.83187, 12.47574);
+    var milan = new google.maps.LatLng(45.48195923667895, 9.182898844179354);
 
     var style = [
         {
@@ -73,7 +73,7 @@ function initialize() {
 
     var mapOptions = {
         // SET THE CENTER
-        center: rome,
+        center: milan,
 
         // SET THE MAP STYLE & ZOOM LEVEL
         mapTypeId: google.maps.MapTypeId.ROADMAP,
