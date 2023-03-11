@@ -35,9 +35,9 @@
         //  Count Down JS
         // -----------------------------
         $('.timer').syotimer({
-            year: 2022,
+            year: 2023,
             month: 5,
-            day: 27,
+            day: 26,
             hour: 9,
             minute: 0
         });
