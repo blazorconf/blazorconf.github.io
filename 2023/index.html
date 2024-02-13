@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Blazor Conf 2023</title>
+
+	<!-- PLUGINS CSS STYLE -->
+	<!-- Bootstrap -->
+	<link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link href="plugins/font-awsome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Magnific Popup -->
+	<link href="plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+	<!-- Slick Carousel -->
+	<link href="plugins/slick/slick.css" rel="stylesheet">
+	<link href="plugins/slick/slick-theme.css" rel="stylesheet">
+	<!-- CUSTOM CSS -->
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- FAVICON -->
+	<link rel="apple-touch-icon" sizes="57x57" href="images/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+	<meta property="og:title" content="Blazor Conf 2023">
+    <meta property="og:image" content="https://blazorconf.it/images/logo-blazorconf2023.svg">
+    <meta property="og:locale" content="it">
+    <meta property="og:type" content="website">
+    <meta name="description" content="La prima conferenza italiana dedicata allo sviluppo di applicazioni con Blazor organizzata dalla community Blazor Developer Italiani">
+    <meta property="og:description" content="La prima conferenza italiana dedicata allo sviluppo di applicazioni con Blazor organizzata dalla community Blazor Developer Italiani">
+    <link rel="canonical" href="/">
+    <meta property="og:url" content="/">
+    <meta property="og:site_name" content="Blazor Conf 2023">
+    <script type="application/ld+json">
+        {
+            "headline": "Blazor Conf 2023",
+            "description": "La prima conferenza italiana dedicata allo sviluppo di applicazioni con Blazor organizzata dalla community Blazor Developer Italiani",
+            "url": "/",
+            "@type": "WebSite",
+            "name": "Blazor Conf 2023",
+            "@context": "https://schema.org"
+        }
+    </script>
+	<!-- Meta Pixel Code -->
+	<script>
+	!function(f,b,e,v,n,t,s)
+	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];
+	s.parentNode.insertBefore(t,s)}(window, document,'script',
+	'https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '728541485664897');
+	fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	src="https://www.facebook.com/tr?id=728541485664897&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- End Meta Pixel Code -->
+	<meta name="facebook-domain-verification" content="p6uhikghqs7zkx7ogk1l6z9z14fjn5" />
+</head>
+
+<body class="body-wrapper">
+
+
+	<nav class="navbar main-nav border-less fixed-top navbar-expand-lg p-0">
+		<div class="container-fluid p-0">
+			<!-- logo -->
+			<a class="navbar-brand" href="#">
+				<img width="205" src="images/logo-blazorconf2023.svg" alt="logo blazor conference 2023">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="fa fa-bars"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item dropdown active dropdown-slide">
+						<a class="nav-link to-top" href="/">Home
+							<span>/</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#speaker">Speaker
+							<span>/</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#schedule">Agenda<span>/</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#sponsor">Sponsor<span>/</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#location">Location</a>
+					</li>
+				</ul>
+				<a href="https://www.eventbrite.it/e/biglietti-blazor-conf-2023-579895782897" target="_blank" class="ticket">
+					<img src="images/icon/ticket.png" alt="ticket">
+					<span>Registrati</span>
+				</a>
+			</div>
+		</div>
+	</nav>
+
+	<section id="home" class="banner bg-banner-two">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<!-- Content Block -->
+					<div class="block">
+						<!-- Coundown Timer -->
+						<img class="img img-fluid" src="images/logo-blazorconf2023.svg" alt="logo blazor conf 2023">
+						<h3 class="pt-5 pb-4 text-color-primary">26 Maggio 2023 - Milano e on-line</h3>
+						<!-- Action Button -->
+						<!--<a href="https://www.eventbrite.it/e/biglietti-blazor-conf-2023-579895782897" class="btn btn-main-md mt-3">Registrati</a>-->
+						<div class="timer"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="about" class="section about">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6 align-self-center">
+					<div class="image-block bg-about">
+						<img class="img-fluid" src="images/BlazoDevIta-UgiDotNet.png" alt="logo Blazor Developer Italiani">
+					</div>
+				</div>
+				<div class="col-lg-8 col-md-6 align-self-center">
+					<div class="content-block">
+						<h2>La conferenza italiana su <span class="alternate">Blazor</span></h2>
+						<div class="description-one">
+							<p>
+								La terza edizione della conferenza italiana dedicata al framework Blazor organizzata dalla community Blazor Developer Italiani, quest'anno in collaborazione con la community UgiDotNet
+							</p>
+						</div>
+						<div class="description-two">
+							<p>
+								Una giornata per stare insieme e parlare del framework, con tanti speaker italiani che usano Blazor già in produzione e che fanno parte della community. L'evento sarà sia in presenza che on-line e la partecipazione è completamente gratuita da remoto mentre l'accesso all'evento fisico richiede un piccolo contributo per sostenere i costi.
+							</p>
+						</div>
+						<ul class="list-inline">
+							<li class="list-inline-item">
+								<a href="https://www.eventbrite.it/e/biglietti-blazor-conf-2023-579895782897" target="_blank" class="btn btn-main-md">Registrati</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="https://blazordev.it" target="_blank" class="btn btn-transparent-md">Blazor Developer Italiani</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="https://ugidotnet.org" target="_blank" class="btn btn-transparent-md">UgiDotNet</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="speaker" class="section speakers bg-speaker overlay-lighter">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<!-- Section Title -->
+					<div class="section-title white">
+						<h3>Chi saranno gli <span class="alternate">Speaker?</span></h3>
+						<p>Amici e membri della community, che condivideranno la loro esperienza sul framework e risponderanno a tutte le vostre domande</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="speaker-item">
+						<div class="image">
+							<img src="images/speakers/stevesanderson.jpg" alt="Foto Steve Sanderson" class="img-fluid">
+							<div class="primary-overlay"></div>
+							<div class="socials">
+								<ul class="list-inline">
+									<li class="list-inline-item"><a target="_blank" href="https://www.youtube.com/@stevensandersonuk"><i class="fa fa-youtube"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://twitter.com/stevensanderson"><i class="fa fa-twitter"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://blog.stevensanderson.com/"><i class="fa fa-sitemap"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://github.com/SteveSandersonMS"><i class="fa fa-github"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="content text-center">
+							<h5><a href="https://www.linkedin.com/in/apomic80/" target="_blank">Steve Sanderson</a></h5>
+							<p>Developer & Architect @ Microsoft</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="speaker-item">
+						<div class="image">
+							<img src="images/speakers/micheleaponte.jpg" alt="Foto Michele Aponte" class="img-fluid">
+							<div class="primary-overlay"></div>
+							<div class="socials">
+								<ul class="list-inline">
+									<li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/apomic80"><i class="fa fa-facebook"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://twitter.com/apomic80"><i class="fa fa-twitter"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/apomic80/"><i class="fa fa-linkedin"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://github.com/apomic80"><i class="fa fa-github"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="content text-center">
+							<h5><a href="https://www.linkedin.com/in/apomic80/" target="_blank">Michele Aponte</a></h5>
+							<p>CEO @ Ellycode / CEO @ Blexin</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="speaker-item">
+						<div class="image">
+							<img src="images/speakers/emanuelebartolesi.jpg" alt="Foto Emanuele Bartolesi" class="img-fluid">
+							<div class="primary-overlay"></div>
+							<div class="socials">
+								<ul class="list-inline">
+									<li class="list-inline-item"><a target="_blank" href="https://www.emanuelebartolesi.com/"><i class="fa fa-sitemap"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://twitter.com/kasuken"><i class="fa fa-twitter"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/bartolesiemanuele/"><i class="fa fa-linkedin"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://github.com/kasuken"><i class="fa fa-github"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="content text-center">
+							<h5><a href="https://www.emanuelebartolesi.com/" target="_blank">Emanuele Bartolesi</a></h5>
+							<p>Microsoft 365 Architect</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="speaker-item">
+						<div class="image">
+							<img src="images/speakers/andreasaltarello.jpg" alt="Foto Andrea Saltarello" class="img-fluid">
+							<div class="primary-overlay"></div>
+							<div class="socials">
+								<ul class="list-inline">
+									<li class="list-inline-item"><a target="_blank" href="https://www.ugidotnet.org/autore/4382/Andrea-Saltarello"><i class="fa fa-sitemap"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://twitter.com/andysal74"><i class="fa fa-twitter"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/andysal/"><i class="fa fa-linkedin"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://github.com/andysal"><i class="fa fa-github"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="content text-center">
+							<h5><a href="https://www.ugidotnet.org/autore/4382/Andrea-Saltarello" target="_blank">Andrea Saltarello</a></h5>
+							<p>CTO @ Managed Designs</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="speaker-item">
+						<div class="image">
+							<img src="images/speakers/andreadottor.jpg" alt="Foto Andrea Dottor" class="img-fluid">
+							<div class="primary-overlay"></div>
+							<div class="socials">
+								<ul class="list-inline">
+									<li class="list-inline-item"><a target="_blank" href="https://www.dottor.net/"><i class="fa fa-sitemap"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://twitter.com/dottor"><i class="fa fa-twitter"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/andreadottor/"><i class="fa fa-linkedin"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://github.com/andreadottor"><i class="fa fa-github"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="content text-center">
+							<h5><a href="https://www.dottor.net/" target="_blank">Andrea Dottor</a></h5>
+							<p>Freelance Developer</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="speaker-item">
+						<div class="image">
+							<img src="images/speakers/fabiospaziani.jpg" alt="Foto Fabio Spaziani" class="img-fluid">
+							<div class="primary-overlay"></div>
+							<div class="socials">
+								<ul class="list-inline">
+									<li class="list-inline-item"><a target="_blank" href="https://blazordev.it/author/fabiospaz"><i class="fa fa-sitemap"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://twitter.com/SpazianiF"><i class="fa fa-twitter"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/fabio-spaz/"><i class="fa fa-linkedin"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://github.com/fabio-sp/"><i class="fa fa-github"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="content text-center">
+							<h5><a href="#" target="_blank">Fabio Spaziani</a></h5>
+							<p>Junior Architect @ Blexin</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="speaker-item">
+						<div class="image">
+							<img src="images/speakers/diegozunino.jpg" alt="Foto Diego Zunino" class="img-fluid">
+							<div class="primary-overlay"></div>
+							<div class="socials">
+								<ul class="list-inline">
+									<li class="list-inline-item"><a target="_blank" href="https://blazordev.it/author/zuninodiego"><i class="fa fa-sitemap"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://twitter.com/znndgi"><i class="fa fa-twitter"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/diego-zunino/"><i class="fa fa-linkedin"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://github.com/DiegoZunino"><i class="fa fa-github"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="content text-center">
+							<h5><a href="#" target="_blank">Diego Zunino</a></h5>
+							<p>Resp. Area Sviluppo @ Ellycode</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="speaker-item">
+						<div class="image">
+							<img src="images/speakers/matteopagani.jpg" alt="Foto Matteo Pagani" class="img-fluid">
+							<div class="primary-overlay"></div>
+							<div class="socials">
+								<ul class="list-inline">
+									<li class="list-inline-item"><a target="_blank" href="https://techcommunity.microsoft.com/t5/modern-work-app-consult-blog/bg-p/ModernWorkAppConsult"><i class="fa fa-sitemap"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://twitter.com/qmatteoq"><i class="fa fa-twitter"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/matteopagani/"><i class="fa fa-linkedin"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://github.com/qmatteoq"><i class="fa fa-github"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="content text-center">
+							<h5><a href="#" target="_blank">Matteo Pagani</a></h5>
+							<p>MWA Consult Tech Lead @ Microsoft</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="speaker-item">
+						<div class="image">
+							<img src="images/speakers/stefanomostarda.jpg" alt="Foto Stefano Mostarda" class="img-fluid">
+							<div class="primary-overlay"></div>
+							<div class="socials">
+								<ul class="list-inline">
+									<li class="list-inline-item"><a target="_blank" href="https://www.stefanomostarda.it/"><i class="fa fa-sitemap"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://twitter.com/SM15455"><i class="fa fa-twitter"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/stefanomostarda/"><i class="fa fa-linkedin"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://github.com/sm15455"><i class="fa fa-github"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="content text-center">
+							<h5><a href="#" target="_blank">Stefano Mostarda</a></h5>
+							<p>Software Architect @ Alten</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="speaker-item">
+						<div class="image">
+							<img src="images/speakers/albertomori.jpg" alt="Foto Alberto Mori" class="img-fluid">
+							<div class="primary-overlay"></div>
+							<div class="socials">
+								<ul class="list-inline">
+									<li class="list-inline-item"><a target="_blank" href="https://www.morialberto.it/"><i class="fa fa-sitemap"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://twitter.com/albx87"><i class="fa fa-twitter"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/morialberto/"><i class="fa fa-linkedin"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://github.com/albx/"><i class="fa fa-github"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="content text-center">
+							<h5><a href="#" target="_blank">Alberto Mori</a></h5>
+							<p>Software Developer @ Able Tech</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="speaker-item">
+						<div class="image">
+							<img src="images/speakers/albertoacerbis.jpg" alt="Foto Alberto Acerbis" class="img-fluid">
+							<div class="primary-overlay"></div>
+							<div class="socials">
+								<ul class="list-inline">
+									<li class="list-inline-item"><a target="_blank" href="#"><i class="fa fa-sitemap"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://twitter.com/aacerbis"><i class="fa fa-twitter"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/aacerbis/"><i class="fa fa-linkedin"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://github.com/ace68"><i class="fa fa-github"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="content text-center">
+							<h5><a href="#" target="_blank">Alberto Acerbis</a></h5>
+							<p>Software Engineer @ Intré</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="speaker-item">
+						<div class="image">
+							<img src="images/speakers/dariobenevento.jpg" alt="Foto Dario Benevento" class="img-fluid">
+							<div class="primary-overlay"></div>
+							<div class="socials">
+								<ul class="list-inline">
+									<li class="list-inline-item"><a target="_blank" href="#"><i class="fa fa-sitemap"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://twitter.com/DragonflyLand70"><i class="fa fa-twitter"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/dario-b-965aa032/"><i class="fa fa-linkedin"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://github.com/BitawareUnleashed"><i class="fa fa-github"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="content text-center">
+							<h5><a href="#" target="_blank">Dario Benevento</a></h5>
+							<p>Senior Software Developer</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="speaker-item">
+						<div class="image">
+							<img src="images/speakers/nicolaparo.jpg" alt="Foto Nicola Paro" class="img-fluid">
+							<div class="primary-overlay"></div>
+							<div class="socials">
+								<ul class="list-inline">
+									<li class="list-inline-item"><a target="_blank" href="https://blazordev.it/author/nicolaparo/"><i class="fa fa-sitemap"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://twitter.com/nicola_paro"><i class="fa fa-twitter"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/nicolaparo//"><i class="fa fa-linkedin"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://github.com/nicolaparo"><i class="fa fa-github"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="content text-center">
+							<h5><a href="#" target="_blank">Nicola Paro</a></h5>
+							<p>Cloud Solutions Engineer @ BeanTech</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="schedule" class="section schedule">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="section-title">
+						<h3><span class="alternate">Agenda</span> Conferenza</h3>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					
+					<div class="schedule-contents bg-schedule">
+						<div class="tab-content" id="pills-tabContent">
+							<div class="tab-pane fade show active schedule-item" id="nov20">
+								<ul class="m-0 p-0">
+									<li class="headings">
+										<div class="time">Ora</div>
+										<div class="speaker">Speaker</div>
+										<div class="subject">Sessione</div>
+									</li>
+									<li class="schedule-details">
+										<div class="block d-flex flex-lg-col">
+											<div class="time">
+												<i class="fa fa-clock-o"></i>
+												<span class="time">9.00 - 9.30</span>
+											</div>
+											<div class="speaker">
+											</div>
+											<div class="subject">
+												<strong>Registrazione</strong>
+												<p>Check-in per i partecipanti in presenza</p>
+											</div>
+										</div>
+									</li>
+									<li class="schedule-details">
+										<div class="block d-flex flex-lg-col">
+											<div class="time">
+												<i class="fa fa-clock-o"></i>
+												<span class="time">9.30 - 10.40</span>
+											</div>
+											<div class="speakers d-flex flex-column mt-3">
+												<div class="speaker w-100">
+													<img src="images/speakers/micheleaponte-thumb.jpg"
+														alt="speaker michele aponte">
+													<span class="name">Michele Aponte</span>
+												</div>
+												<div class="speaker w-100">
+													<img src="images/speakers/emanuelebartolesi-thumb.jpg"
+														alt="speaker emanuele bartolesi">
+													<span class="name">Emanuele Bartolesi</span>
+												</div>
+												<div class="speaker w-100">
+													<img src="images/speakers/andreasaltarello-thumb.jpg"
+														alt="speaker andrea saltarello">
+													<span class="name">Andrea Saltarello</span>
+												</div>
+												<div class="speaker w-100">
+													<img src="images/speakers/stevesanderson-thumb.jpg"
+														alt="speaker steve sanderson">
+													<span class="name">Steve Sanderson</span>
+												</div>
+											</div>
+											<div class="subject">
+												<strong>Keynote</strong><br>
+												<p>
+													Michele, Emanuele e Andrea ci accompagneranno nell'introduzione di questa terza edizione della Blazor Conf, 
+													presentando l'agenda, gli speaker, gli sponsor e la community Blazor Developer Italiani che, insieme a 
+													UgiDotNet, ha organizzato questa edizione 2023.
+												</p>
+												<p>&nbsp;</p>
+												<p>
+													Sarà un momento per condividere il progetto dietro la community, ma anche per fare il punto sullo stato 
+													dell'evoluzione del framework e come Blazor possa dare valore nei progetti basati su .NET Core, siano essi Web, Desktop o Mobile. 
+												</p>
+												<p>&nbsp;</p>
+												<p>
+													Andrea ci racconterà come siamo arrivati a Blazor, ripercorrendo la storia del framework ASP.NET e condividendo 
+													con noi la sua visione del futuro dello sviluppo web e non solo sullo stack tecnologico Microsoft.
+												</p>
+												<p>&nbsp;</p>
+												<p>
+													Avremo inoltre il grande onore di avere con noi in diretta Steve Sanderson, il creatore di Blazor, che farà un saluto alla community
+													e risponderà alle domande dei partecipanti che raccoglieremo tra gli iscritti alla conferenza.
+												</p>
+											</div>
+										</div>
+									</li>
+									<li class="schedule-details">
+										<div class="block d-flex flex-lg-col">
+											<div class="time">
+												<i class="fa fa-clock-o"></i>
+												<span class="time">10.40 - 11.20</span>
+											</div>
+											<div class="speaker">
+												<img src="images/speakers/andreadottor-thumb.jpg" alt="speaker andrea dottor">
+												<span class="name">Andrea Dottor</span>
+											</div>
+											<div class="subject">
+												<strong>Blazor United. Un salto nel futuro</strong>
+												<p>.NET 8 porterà con se la più grande innovazione in ambito web: Blazor United. Un modello di sviluppo unificato tra client e server, che permetterà di combinare pagine con rendering server-side per facilitare (ad esempio) l'indicizzazione, a contenuti dinamici generati direttamente client-side (come siamo abituati oggi con Blazor WebAssembly). Starà a noi (ma volendo anche no) scegliere quale comportamento avere a livello di applicazioni, pagina e componente, dandoci la massima flessibilità. In questa sessione faremo un salto nel futuro, per capire come evolveranno le nostre applicazioni.</p>
+											</div>
+										</div>
+									</li>
+									<li class="schedule-details">
+										<div class="block d-flex flex-lg-col">
+											<div class="time">
+												<i class="fa fa-clock-o"></i>
+												<span class="time">11.20 - 12.00</span>
+											</div>
+											<div class="speaker">
+												<img src="images/speakers/fabiospaziani-thumb.jpg" alt="speaker fabio spaziani">
+												<span class="name">Fabio Spaziani</span>
+											</div>
+											<div class="subject">
+												<strong>Gestione dello stato in Blazor</strong>
+												<p>Al crescere della complessità delle nostre applicazioni Blazor, aumenta anche la complessità delle interazioni tra i componenti della UI. In questa sessione vedremo come semplificare la comunicazione tra i componenti di applicazioni Blazor utilizzando diverse tecniche di gestione dello stato.</p>
+											</div>
+										</div>
+									</li>
+									<li class="schedule-details">
+										<div class="block d-flex flex-lg-col">
+											<div class="time">
+												<i class="fa fa-clock-o"></i>
+												<span class="time">12.00 - 12.40</span>
+											</div>
+											<div class="speaker">
+												<img src="images/speakers/diegozunino-thumb.jpg" alt="speaker diego zunino">
+												<span class="name">Diego Zunino</span>
+											</div>
+											<div class="subject">
+												<strong>Usare Blazor in un caso reale</strong>
+												<p>Se ti stai chiedendo se Blazor è davvero usato in produzione, questa è la sessione che fa per te. Vedremo vantaggi e svantaggi dell’uso del framework in un caso reale, come aggirare le sue limitazioni e perché offre vantaggi non trascurabili rispetto ai suoi competitor.</p>
+											</div>
+										</div>
+									</li>
+									<li class="schedule-details">
+										<div class="block d-flex flex-lg-col">
+											<div class="time">
+												<i class="fa fa-clock-o"></i>
+												<span class="time">12.40 - 14.00</span>
+											</div>
+											<div class="speaker">
+											</div>
+											<div class="subject">
+												<strong>Pausa pranzo</strong>
+											</div>
+										</div>
+									</li>
+									<li class="schedule-details">
+										<div class="block d-flex flex-lg-col">
+											<div class="time">
+												<i class="fa fa-clock-o"></i>
+												<span class="time">14.00 - 14.40</span>
+											</div>
+											<div class="speaker">
+												<img src="images/speakers/matteopagani-thumb.jpg" alt="speaker matteo pagani">
+												<span class="name">Matteo Pagani</span>
+											</div>
+											<div class="subject">
+												<strong>Sviluppare applicazioni per Teams con Blazor e Teams Toolkit</strong>
+												<p>Microsoft Teams è considerato, da molti, il vero nuovo sistema operativo di Microsoft, in cui si concentrano tutti i flussi di lavoro di un'azienda: dalle chat alla gestione dei ticket, dalle riunioni alla condivisione di documenti. Forse, però, non tutti sanno che proprio Blazor è una delle tecnologie di punta per espandere l'ecosistema di Teams. Nel corso della sessione, vedremo come il Teams Toolkit ci permette di sviluppare applicazioni Blazor che si integrano con la piattaforma tramite SSO, Fluent UI e TeamsFX.</p>
+											</div>
+										</div>
+									</li>
+									<li class="schedule-details">
+										<div class="block d-flex flex-lg-col">
+											<div class="time">
+												<i class="fa fa-clock-o"></i>
+												<span class="time">14.40 - 15.20</span>
+											</div>
+											<div class="speaker">
+												<img src="images/speakers/stefanomostarda-thumb.jpg" alt="speaker stefano mostarda">
+												<span class="name">Stefano Mostarda</span>
+											</div>
+											<div class="subject">
+												<strong>Blazor Security: c'è vita oltre un identity provider</strong>
+												<p>Molte applicazioni usano un identity provider per loggare gli utenti (Identity Server, Azure AD, Azure AD B2C, Google, Facebook etc). Ma cosa succede quando dobbiamo integrarci con altri sistemi già esistenti o quando non possiamo creare un identity provider? In questa sessione proveremo a dare una risposta a queste domande.</p>
+											</div>
+										</div>
+									</li>
+									<li class="schedule-details">
+										<div class="block d-flex flex-lg-col">
+											<div class="time">
+												<i class="fa fa-clock-o"></i>
+												<span class="time">15.20 - 16.00</span>
+											</div>
+											<div class="speaker">
+												<img src="images/speakers/albertomori-thumb.jpg" alt="speaker alberto mori">
+												<span class="name">Alberto Mori</span>
+											</div>
+											<div class="subject">
+												<strong>Riusare i nostri componenti con Blazor Custom Elements</strong>
+												<p>Una delle feature di Blazor rilasciate con .NET 7 e che ha incuriosito maggiormente è stata la possibilità di riutilizzare i nostri componenti anche in tecnologie differenti. Tutto questo è possibile grazie ai Custom Elements. In questa sessione introdurremo questa funzionalità provando a creare dei componenti da utilizzare in parti che non siano Blazor.</p>
+											</div>
+										</div>
+									</li>
+									<li class="schedule-details">
+										<div class="block d-flex flex-lg-col">
+											<div class="time">
+												<i class="fa fa-clock-o"></i>
+												<span class="time">16.00 - 16.40</span>
+											</div>
+											<div class="speaker">
+												<img src="images/speakers/albertoacerbis-thumb.jpg" alt="speaker alberto acerbis">
+												<span class="name">Alberto Acerbis</span>
+											</div>
+											<div class="subject">
+												<strong>BDD in Blazor using SpecFlow</strong>
+												<p>Given-When-Then è uno stile di rappresentazione dei test o, come direbbero i suoi sostenitori, di specificazione del comportamento di un sistema usando SpecificationByExample.Daniel Terhorst-North e Chris Matts lo hanno sviluppato come parte del Behavior-Driven Development. Dopo averlo adottato per il backend, mi sono chiesto se potesse essere utile anche per il frontend. Curiosi di sapere com'è andata? Scopriamolo insieme.</p>
+											</div>
+										</div>
+									</li>
+									<li class="schedule-details">
+										<div class="block d-flex flex-lg-col">
+											<div class="time">
+												<i class="fa fa-clock-o"></i>
+												<span class="time">16.40 - 17.20</span>
+											</div>
+											<div class="speaker">
+												<img src="images/speakers/dariobenevento-thumb.jpg" alt="speaker dario benevento">
+												<span class="name">Dario Benevento</span>
+											</div>
+											<div class="subject">
+												<strong>Usare componenti Blazor in un'app WPF</strong>
+												<p>Le applicazioni WPF sono ancora ben vive e presenti sul mercato. Sempre più spesso, però, l'ecosistema moderno di un'azienda prevede anche applicazioni WEB che in un ambiente di sviluppo prettamente C# potrebbe essere in Blazor. Sviluppare nuovi componenti WPF per armonizzare le due UI potrebbe essere troppo oneroso. Vediamo come usare gli stessi componenti e quali possono essere le tecniche migliori per un passaggio graduale da un front end WPF a Blazor.</p>
+											</div>
+										</div>
+									</li>
+									<li class="schedule-details">
+										<div class="block d-flex flex-lg-col">
+											<div class="time">
+												<i class="fa fa-clock-o"></i>
+												<span class="time">17.20 - 18.00</span>
+											</div>
+											<div class="speaker">
+												<img src="images/speakers/nicolaparo_thumb.jpg" alt="speaker nicola paro">
+												<span class="name">Nicola Paro</span>
+											</div>
+											<div class="subject">
+												<strong>Accendi la festa con Blazor Hybrid</strong>
+												<p>Non solo nel web, ma anche sul desktop: con Blazor Hybrid possiamo creare un look moderno pure per le nostre vecchie applicazioni WinForm. In questa sessione faremo dialogare Blazor con i fari da spettacolo, utilizzando una libreria Win32 nativa e tecnologie legacy, che ad oggi funzionano solamente in uno scenario desktop.</p>
+											</div>
+										</div>
+									</li>
+									<li class="schedule-details">
+										<div class="block d-flex flex-lg-col">
+											<div class="time">
+												<i class="fa fa-clock-o"></i>
+												<span class="time">18.00 - 18.10
+											</span></div>
+											<div class="speaker">
+											</div>
+											<div class="subject">
+												<strong>Q&amp;A e saluti finali</strong>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="registration" class="cta-ticket bg-ticket overlay-dark">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<!-- Get ticket info -->
+					<div class="content-block">
+						<h2>Registrati<span class="alternate">Subito!</span></h2>
+						<p>L'evento è gratuito in remoto, mentre in presenza chiediamo un piccolo contributo per sostenere i costi.</p>
+						<a href="https://www.eventbrite.it/e/biglietti-blazor-conf-2023-579895782897" target="_blank" class="btn btn-main-md">Registrati</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="image-block"><img src="images/speakers/speaker-ticket.png" alt="" class="img-fluid"></div>
+	</section>
+
+	<section id="sponsor" class="sponsors section bg-sponsors overlay-white">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="section-title">
+						<h3>I nostri <span class="alternate">Sponsor</span></h3>
+						<p>Questo evento è gratuito grazie al supporto dei nostri sponsor, che coprono le spese e ci supportano in tutta la fase di organizzazione</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="sponsor-title text-center">
+						<h5>Sponsor Platinum</h5>
+					</div>
+					<div class="block text-center">
+						<ul class="list-inline sponsors-list">
+							<li class="list-inline-item">
+								<div class="image-block text-center">
+									<a href="https://blexin.com/" target="_blank">
+										<img src="images/sponsors/blexin.png" alt="Logo Sponsor Blexin"
+											class="img-fluid">
+									</a>
+								</div>
+							</li>
+							<li class="list-inline-item">
+								<div class="image-block text-center">
+									<a href="https://ellycode.com/" target="_blank">
+										<img src="images/sponsors/ellycode.png" alt="Logo Sponsor Ellycode"
+											class="img-fluid">
+									</a>
+								</div>
+							</li>
+							<li class="list-inline-item">
+								<div class="image-block text-center">
+									<a href="https://improove.tech/" target="_blank">
+										<img src="images/sponsors/improove.png" alt="Logo Sponsor Improove"
+											class="img-fluid">
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="sponsor-title text-center">
+						<h5>Sponsor Gold</h5>
+					</div>
+					<div class="block text-center">
+						<ul class="list-inline sponsors-list">
+							<li class="list-inline-item">
+								<div class="image-block text-center">
+									<a href="https://www.microsoft.com/it-it/" target="_blank">
+										<img src="images/sponsors/microsoft.png" alt="Logo Sponsor Microsoft"
+											class="img-fluid">
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="sponsor-title text-center">
+						<h5>Sponsor Silver</h5>
+					</div>
+					<div class="block text-center">
+						<ul class="list-inline sponsors-list">
+							<!--<li class="list-inline-item">
+								<div class="image-block text-center">
+									<a href="http://ynnovahq.com/en/" target="_blank">
+										<img src="images/sponsors/ynnova.png" alt="Logo Sponsor Ynnova"
+											class="img-fluid">
+									</a>
+								</div>
+							</li>-->
+							<li class="list-inline-item">
+								<div class="image-block text-center">
+									<a href="https://www.elogic.it/" target="_blank">
+										<img src="images/sponsors/elogic.png" alt="Logo Sponsor Elogic"
+											class="img-fluid">
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="sponsor-title text-center">
+						<h5>Supporter</h5>
+					</div>
+					<div class="block text-center">
+						<ul class="list-inline sponsors-list">
+							<li class="list-inline-item">
+								<div class="image-block text-center">
+									<a href="https://www.qt2000.net/" target="_blank">
+										<img src="images/sponsors/qt2000.png" alt="Logo Sponsor QT2000"
+											class="img-fluid">
+									</a>
+								</div>
+							</li>
+							<li class="list-inline-item">
+								<div class="image-block text-center">
+									<a href="https://www.innovidia.it/" target="_blank">
+										<img src="images/sponsors/innovidia.png" alt="Logo Innovidia"
+											class="img-fluid">
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="sponsor-title text-center">
+						<h5>Community Partner</h5>
+					</div>
+					<div class="block text-center">
+						<ul class="list-inline sponsors-list">
+							<li class="list-inline-item">
+								<div class="image-block text-center">
+									<a href="https://www.ugidotnet.org/" target="_blank">
+										<img src="images/sponsors/ugidotnet.png" alt="Logo Community UgiDotNet"
+											class="img-fluid">
+									</a>
+								</div>
+							</li>
+							<li class="list-inline-item">
+								<div class="image-block text-center">
+									<a href="https://dotnetcode.it/" target="_blank">
+										<img src="images/sponsors/dotnetcode.png" alt="Logo Community DotNetCode"
+											class="img-fluid">
+									</a>
+								</div>
+							</li>
+							<li class="list-inline-item">
+								<div class="image-block text-center">
+									<a href="https://www.dotnetside.org/" target="_blank">
+										<img src="images/sponsors/dotnetside.png" alt="Logo Community DotNetSide"
+											class="img-fluid">
+									</a>
+								</div>
+							</li>
+							<li class="list-inline-item">
+								<div class="image-block text-center">
+									<a href="https://www.xedotnet.org/" target="_blank">
+										<img src="images/sponsors/xedotnet.png" alt="Logo Community XeDotNet"
+											class="img-fluid">
+									</a>
+								</div>
+							</li>
+							<li class="list-inline-item">
+								<div class="image-block text-center">
+									<a href="https://www.dotnettoscana.org/" target="_blank">
+										<img src="images/sponsors/dotnettoscana.png" alt="Logo Community DotNetToscana"
+											class="img-fluid">
+									</a>
+								</div>
+							</li>
+							<li class="list-inline-item">
+								<div class="image-block text-center">
+									<a href="https://www.dotnetlombardia.org/" target="_blank">
+										<img src="images/sponsors/dotnetlombardia.jpeg" alt="Logo Community DotNetLombardia"
+											class="img-fluid">
+									</a>
+								</div>
+							</li>
+							<li class="list-inline-item">
+								<div class="image-block text-center">
+									<a href="https://codemo.tech/partners" target="_blank">
+										<img src="images/sponsors/codemotion.png" alt="Logo Community Codemotion"
+											class="img-fluid">
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="location" class="map">
+		<div id="map"></div>
+		<div class="address-block">
+			<h4>Microsoft House Milano</h4>
+			<ul class="address-list p-0 m-0">
+				<li><i class="fa fa-home"></i><span>21 Viale Pasubio 21, 20154 <br />Milano, Italia.</span></li>
+			</ul>
+			<a target="_blank" href="https://www.google.com/maps/place/Microsoft+Italy/@45.4817824,9.1806565,17z/data=!3m2!4b1!5s0x4786c13402b05079:0xd19219eb5f5d2c28!4m6!3m5!1s0x4786ced63c9725e3:0xa4e690313d63ce4f!8m2!3d45.4817787!4d9.1828452!16s%2Fg%2F11_qdjsww" class="btn btn-white-md">Indicazioni stradali</a>
+		</div>
+	</section>
+
+	<footer class="footer-main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="block text-center">
+						<div class="footer-logo">
+							<img width="250" src="images/logo-blazordevita.svg" alt="logo" class="img-fluid">
+						</div>
+						<ul class="social-links-footer list-inline">
+							<li class="list-inline-item">
+								<a target="_blank" href="https://www.facebook.com/blazordeveloperitaliani"><i class="fa fa-facebook"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a target="_blank" href="https://twitter.com/blazordevita"><i class="fa fa-twitter"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a target="_blank" href="https://www.linkedin.com/company/blazor-developer-italiani"><i class="fa fa-linkedin"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a target="_blank" href="https://t.me/+peIr3tJOKNBmNTQ8"><i class="fa fa-telegram"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a target="_blank" href="https://www.youtube.com/c/BlazorDeveloperItaliani"><i class="fa fa-youtube"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a target="_blank" href="https://www.twitch.tv/blazordevita"><i class="fa fa-twitch"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a target="_blank" href="https://github.com/blazordevita"><i class="fa fa-github"></i></a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+	<footer class="subfooter">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 align-self-center">
+					<div class="copyright-text">
+						<p><a target="_blank" href="https://blazordev.it/">Blazor Developer Italiani</a> &#169; 2023 Tutti i diritti sono riservati</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<a href="#" class="to-top"><i class="fa fa-angle-up"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="plugins/jquery/jquery.js"></script>
+	<script src="plugins/popper/popper.min.js"></script>
+	<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script src="plugins/smoothscroll/SmoothScroll.min.js"></script>
+	<script src="plugins/isotope/mixitup.min.js"></script>
+	<script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script src="plugins/slick/slick.min.js"></script>
+	<script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY2AENpUfjNRJB1lbHqzCCgKNcshfkBiQ"></script>
+	<script type="text/javascript" src="plugins/google-map/gmap.js"></script>
+	<script src="js/custom.js"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-F29MV45VMZ"></script>
+	<script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-F29MV45VMZ');
+    </script>
+</body>
+
+</html>
