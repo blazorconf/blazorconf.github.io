@@ -6,7 +6,7 @@ window.marker = null;
 function initialize() {
     var map;
 
-    var milan = new google.maps.LatLng(45.48195923667895, 9.182898844179354);
+    var milan = new google.maps.LatLng(41.8212919,12.4562196);
 
     var style = [
         {
