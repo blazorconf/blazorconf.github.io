@@ -6,7 +6,7 @@ window.marker = null;
 function initialize() {
     var map;
 
-    var milan = new google.maps.LatLng(41.8212919,12.4562196);
+    var rome = new google.maps.LatLng(41.82159572568097, 12.458869601852934);
 
     var style = [
         {
@@ -73,7 +73,7 @@ function initialize() {
 
     var mapOptions = {
         // SET THE CENTER
-        center: milan,
+        center: rome,
 
         // SET THE MAP STYLE & ZOOM LEVEL
         mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -107,7 +107,7 @@ function initialize() {
     var pinIcon = new google.maps.MarkerImage(marker_image,null,null, null,new google.maps.Size(40, 60));
 
     marker = new google.maps.Marker({
-        position: milan,
+        position: rome,
         map: map,
         icon: pinIcon,
         title: 'eventre'
