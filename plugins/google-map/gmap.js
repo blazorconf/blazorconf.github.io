@@ -6,7 +6,7 @@ window.marker = null;
 function initialize() {
     var map;
 
-    var mestre = new google.maps.LatLng(45.4644, 12.2297);
+    var mestre = new google.maps.LatLng(45.47446629153585, 12.215392822197256);
 
     var style = [
         {
