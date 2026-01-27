@@ -35,9 +35,9 @@
         //  Count Down JS
         // -----------------------------
         $('.timer').syotimer({
-            year: 2024,
+            year: 2026,
             month: 4,
-            day: 19,
+            day: 10,
             hour: 9,
             minute: 0
         });
