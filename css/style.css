@@ -769,11 +769,6 @@ select.form-control:not([size]):not([multiple]) {
   padding: 34px 32px;
 }
 
-.main-nav .ticket.ticket-sessionize {
-  background: #dc3545;
-  margin-right: 10px;
-}
-
 @media (max-width: 1200px) {
   .main-nav .ticket {
     padding: 23px 14px;

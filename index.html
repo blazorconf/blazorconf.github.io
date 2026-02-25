@@ -114,13 +114,19 @@
 						</a>
 					</li>
 					<li class="nav-item">
+						<a class="nav-link" href="#speaker">Speaker
+							<span>/</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#schedule">Agenda
+							<span>/</span>
+						</a>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link" href="#location">Location</a>
 					</li>
 				</ul>
-				<a href="https://sessionize.com/blazorconf2026/" target="_blank" class="ticket ticket-sessionize">
-					<i class="fa fa-microphone"></i>
-					<span>Proponi Sessione</span>
-				</a>
 				<a href="https://www.eventbrite.com/e/registrazione-blazor-conf-2026-1982296322663" target="_blank" class="ticket">
 					<i class="fa fa-ticket"></i>
 					<span>Registrati</span>
@@ -156,7 +162,7 @@
 						<h2>La conferenza italiana su <span class="alternate">Blazor</span></h2>
 						<div class="description-one">
 							<p>
-								La quinta edizione della conferenza italiana dedicata al framework Blazor organizzata dalla community Blazor Developer Italiani, in collaborazione con le community Xe e DotNetCode.
+								La quinta edizione della conferenza italiana dedicata al framework Blazor organizzata dalla community Blazor Developer Italiani e dalla community Xe.
 							</p>
 						</div>
 						<div class="description-two">
@@ -169,16 +175,10 @@
 								<a href="https://www.eventbrite.com/e/registrazione-blazor-conf-2026-1982296322663" target="_blank" class="btn btn-main-md">Registrati su Eventbrite</a>
 							</li>
 							<li class="list-inline-item">
-								<a href="https://sessionize.com/blazorconf2026/" target="_blank" class="btn btn-main-md">Proponi una sessione</a>
-							</li>
-							<li class="list-inline-item">
 								<a href="https://blazordev.it" target="_blank" class="btn btn-transparent-md">Blazor Developer Italiani</a>
 							</li>
 							<li class="list-inline-item">
 								<a href="https://www.xedotnet.org/" target="_blank" class="btn btn-transparent-md">Xe</a>
-							</li>
-							<li class="list-inline-item">
-								<a href="https://dotnetcode.it/" target="_blank" class="btn btn-transparent-md">DotNetCode</a>
 							</li>
 						</ul>
 					</div>
@@ -187,7 +187,40 @@
 		</div>
 	</section>
 
-	<!-- TODO: Sezioni speaker, schedule, registration e sponsor da aggiungere quando disponibili -->
+	<section id="speaker" class="section speakers bg-speaker overlay-lighter">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="section-title white">
+						<h3>Speaker <span class="alternate">Blazor Conf 2026</span></h3>
+						<p>Scopri i relatori e i profili che saliranno sul palco della prossima edizione.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<script type="text/javascript" src="https://sessionize.com/api/v2/imzqowp2/view/SpeakerWall"></script>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="schedule" class="section schedule two">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="section-title">
+						<h3>Agenda <span class="alternate">Blazor Conf 2026</span></h3>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<script type="text/javascript" src="https://sessionize.com/api/v2/imzqowp2/view/GridSmart"></script>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<section id="partner" class="sponsors section bg-sponsors overlay-white">
 		<div class="container">
@@ -206,14 +239,6 @@
 								<div class="image-block text-center">
 									<a href="https://www.xedotnet.org/" target="_blank">
 										<img src="images/sponsors/xedotnet.png" alt="Logo Community XeDotNet"
-											class="img-fluid">
-									</a>
-								</div>
-							</li>
-							<li class="list-inline-item">
-								<div class="image-block text-center">
-									<a href="https://dotnetcode.it/" target="_blank">
-										<img src="images/sponsors/dotnetcode.png" alt="Logo Community DotNetCode"
 											class="img-fluid">
 									</a>
 								</div>
