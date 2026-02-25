@@ -7,6 +7,46 @@
             return Math.max(target.offset().top - navHeight, 0);
         }
 
+        var sectionLinks = $('.main-nav .navbar-nav .nav-item .nav-link[href^="#"]');
+        var navItems = $('.main-nav .navbar-nav .nav-item');
+        var homeNavItem = navItems.first();
+
+        function setActiveNavByHash(hash) {
+            navItems.removeClass('active');
+            if (hash) {
+                var activeLink = sectionLinks.filter('[href="' + hash + '"]').first();
+                if (activeLink.length) {
+                    activeLink.closest('.nav-item').addClass('active');
+                    return;
+                }
+            }
+            homeNavItem.addClass('active');
+        }
+
+        function updateActiveNavOnScroll(updateUrl) {
+            var navHeight = $('.main-nav').outerHeight() || 0;
+            var scrollPosition = $(window).scrollTop() + navHeight + 20;
+            var currentHash = '';
+
+            sectionLinks.each(function () {
+                var hash = this.getAttribute('href');
+                var section = $(hash);
+                if (section.length && scrollPosition >= section.offset().top) {
+                    currentHash = hash;
+                }
+            });
+
+            setActiveNavByHash(currentHash);
+
+            if (updateUrl && history.replaceState) {
+                if (currentHash) {
+                    history.replaceState(null, null, currentHash);
+                } else {
+                    history.replaceState(null, null, window.location.pathname + window.location.search);
+                }
+            }
+        }
+
         // -----------------------------
         //  Screenshot Slider
         // -----------------------------
@@ -75,6 +115,7 @@
                             } else {
                                 window.location.hash = hash;
                             }
+                            setActiveNavByHash(hash);
                             // Callback after animation
                             // Must change focus!
                             var $target = $(target);
@@ -95,9 +136,25 @@
             if (initialTarget.length) {
                 setTimeout(function () {
                     $('html, body').scrollTop(getAnchorOffsetTop(initialTarget));
+                    updateActiveNavOnScroll(false);
                 }, 50);
             }
+        } else {
+            updateActiveNavOnScroll(false);
         }
+
+        var isScrollSpyTicking = false;
+        $(window).on('scroll', function () {
+            if (isScrollSpyTicking) {
+                return;
+            }
+
+            isScrollSpyTicking = true;
+            window.requestAnimationFrame(function () {
+                updateActiveNavOnScroll(true);
+                isScrollSpyTicking = false;
+            });
+        });
 
         // -----------------------------
         // To Top Init
@@ -105,7 +162,12 @@
         $('.to-top').on('click', function () {
             $('html, body').animate({
                 scrollTop: 0
-            }, 'slow');
+            }, 'slow', function () {
+                if (history.replaceState) {
+                    history.replaceState(null, null, window.location.pathname + window.location.search);
+                }
+                setActiveNavByHash('');
+            });
             return false;
         });
 
