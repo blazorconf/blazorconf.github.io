@@ -2,6 +2,11 @@
     'use strict';
 
     $(document).on('ready', function () {
+        function getAnchorOffsetTop(target) {
+            var navHeight = $('.main-nav').outerHeight() || 0;
+            return Math.max(target.offset().top - navHeight, 0);
+        }
+
         // -----------------------------
         //  Screenshot Slider
         // -----------------------------
@@ -54,6 +59,7 @@
                     location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
                     location.hostname == this.hostname
                 ) {
+                    var hash = this.hash;
                     // Figure out element to scroll to
                     var target = $(this.hash);
                     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -62,8 +68,13 @@
                         // Only prevent default if animation is actually gonna happen
                         event.preventDefault();
                         $('html, body').animate({
-                            scrollTop: target.offset().top
+                            scrollTop: getAnchorOffsetTop(target)
                         }, 1000, function () {
+                            if (history.pushState) {
+                                history.pushState(null, null, hash);
+                            } else {
+                                window.location.hash = hash;
+                            }
                             // Callback after animation
                             // Must change focus!
                             var $target = $(target);
@@ -78,6 +89,16 @@
                     }
                 }
             });
+
+        if (window.location.hash) {
+            var initialTarget = $(window.location.hash);
+            if (initialTarget.length) {
+                setTimeout(function () {
+                    $('html, body').scrollTop(getAnchorOffsetTop(initialTarget));
+                }, 50);
+            }
+        }
+
         // -----------------------------
         // To Top Init
         // -----------------------------
