@@ -1294,10 +1294,10 @@ select.form-control:not([size]):not([multiple]) {
   overflow: hidden;
 }
 
-@media (max-width: 575px) {
-  .speakers .speaker-item .image img {
-    width: 100% !important;
-  }
+.speakers .speaker-item .image img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .speakers .speaker-item .image .primary-overlay {
